@@ -12,10 +12,6 @@ import java.util.Map;
 public interface HelloService extends Remote {
 	String sayHello(String name) throws RemoteException;
 
-	//String signUp(UserModel user) throws RemoteException;
-
-	//List<UserModel> listAllUsers() throws RemoteException;
-
 	String signUp(Map<String, String> userData) throws RemoteException;
 
 	List<Map<String, String>> listAllUsers() throws RemoteException;

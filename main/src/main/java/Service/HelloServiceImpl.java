@@ -80,43 +80,4 @@ public class HelloServiceImpl extends UnicastRemoteObject implements HelloServic
         }
     }
 
-    
-    /*@Override
-    public String signUp(UserModel user) throws RemoteException{
-    	
-    	try {
-    		UserModel userEntity = new UserModel();
-    		
-            userEntity.setUs_name(user.getUs_name());
-            userEntity.setUs_email(user.getUs_email());
-            userEntity.setUs_password(user.getUs_password());
-    		
-    		String response = userDao.createUser(userEntity);
-    		
-    		if(response == null) {
-    			return errorResponse;
-    		}
-    		
-    		return successResponse;
-			
-		} catch (Exception e) {
-			// TODO: handle exception
-			return errorResponse;
-		}
-    }
-    
-    @Override
-    public List<UserModel> listAllUsers()throws RemoteException{
-    	try {
-			List<UserModel> listUsers =  userDao.listUsers();
-			
-			return listUsers;
-		} catch (Exception e) {
-			// TODO: handle exception
-			return null;
-		}
-    }
-    
-    */
-
 }
