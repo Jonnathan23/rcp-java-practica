@@ -24,7 +24,7 @@ public class Server {
 
 			registry.rebind("Registro", service);
 			System.out.println(
-					"\n |----------------| |Servidor RMI iniciado y listo para aceptar llamadas. | |----------------|");
+					"\n |----------------| |Servidor iniciado y listo para aceptar llamadas. | |----------------|");
 
 			Map<String, String> defualtUser = new HashMap<>();
 			defualtUser.put("us_name", "Administrador");
